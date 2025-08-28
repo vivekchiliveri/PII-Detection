@@ -1,0 +1,42 @@
+ @import 'tailwindcss/base';
+@import 'tailwindcss/components'; 
+@import 'tailwindcss/utilities';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* PII highlighting styles */
+.pii-highlight {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.pii-email { background-color: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
+.pii-phone { background-color: #dcfce7; color: #166534; border: 1px solid #22c55e; }
+.pii-ssn { background-color: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+.pii-creditcard { background-color: #fee2e2; color: #991b1b; border: 1px solid #ef4444; }
+.pii-name { background-color: #f3e8ff; color: #7c3aed; border: 1px solid #8b5cf6; }
+.pii-address { background-color: #ecfdf5; color: #065f46; border: 1px solid #10b981; }
+.pii-ipaddress { background-color: #fff7ed; color: #9a3412; border: 1px solid #f97316; }

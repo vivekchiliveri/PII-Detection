@@ -1,0 +1,34 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PII Detection - AI-Powered Privacy Protection</title>
+    <meta name="description" content="Advanced PII detection and anonymization using Piiranha v1 AI model with 98.27% accuracy" />
+    <style>
+      body { margin: 0; font-family: system-ui; }
+      .loading { 
+        display: flex; align-items: center; justify-content: center; 
+        min-height: 100vh; 
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+        color: white; font-size: 18px;
+      }
+      .spinner {
+        width: 40px; height: 40px; margin-right: 16px;
+        border: 4px solid rgba(255,255,255,0.3);
+        border-top: 4px solid white; border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">
+        <div class="spinner"></div>
+        <div>Loading PII Detection App...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
